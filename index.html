@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito-Erick</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/928901709d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+  <header class="header">
+    <div>
+      <img src="/images/undraw_fitness_stats_sht6.svg"  alt="">
+    </div>
+
+
+    <nav class="menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Productos</a></li>
+        <li><a href="#">Sucursales</a></li>
+        <li><a href="#">Contactanos</a></li>
+        
+      </ul>
+    </nav>
+
+
+  </header>
+
+
+
+    <div class="content" id="content">
+       
+        <h1>The Fitness <span>World</span> </h1>
+        <hr>
+        
+        <div class="tct">
+        <div class="row" id="cards">
+        <div class="col-12 mb-2 col-md-19">
+          <div class="card">
+            <img src="/images/descarga (1).jpg" alt="">
+            <div class="card-body">
+              <h5>Aparato Abdomen</h5>
+              <p>1000</p>
+              <button class="btn btn-dark" data-id="1">Agregar</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-12 mb-2 col-md-19">
+          <div class="card">
+            <img src="/images/images (2).jpg" alt="">
+            <div class="card-body">
+              <h5>Accesorios</h5>
+              <p>450</p>
+              <button class="btn btn-dark" data-id="2">Agregar</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-12 mb-2 col-md-19">
+          <div class="card">
+            <img src="/images/images (1).jpg" alt="">
+            <div class="card-body">
+              <h5>Pesas</h5>
+              <p>2000</p>
+              <button class="btn btn-dark" data-id="3">Agregar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+    </div>
+
+   
+
+     
+      
+
+      
+
+
+      
+    
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Articulo</th>
+                <th scope="col">Cantidad</th>
+                <th scope="col">Añadir/Quitar</th>
+                <th scope="col">Total</th> 
+            </tr>
+        </thead>
+        <tbody id="items"></tbody>
+        <tfoot>
+            <tr id="footer">
+                <th scope="row" colspan="5">Carrito Vacio - Empieza a Comprar</th>
+            </tr>
+        </tfoot>
+    </table>
+
+
+    <template id="template-footer">
+        <th scope="row" colspan="2">Products Total</th>
+        <td>18</td>
+        <td>
+            <button class="btn btn-dark btn-sm" id="delete-cart">
+                To Buy
+            </button>
+        </td>
+        <td class="font-weight-bold"> $ <span>500</span></td>
+    </template>
+
+    <template id="template-card">
+        <div class="col-12 mb-2 col-md-4">
+            <div class="card">
+                <img src="" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h5>Titles</h5>
+                    <p>Price</p>
+                    <button class="btn btn-dark" >Add</button>
+                </div>
+            </div>
+        </div>
+    </template>
+    
+
+    <template id="template-carrito">
+        
+        <tr>
+            <th scope="row">id</th>
+            <td>Articulo</td>
+            <td>1</td>
+            <td>
+                <button class="btn btn-info btn-sm">
+                  +
+                </button>
+                <button class="btn btn-danger btn-sm">
+                  -
+                </button>
+            </td>
+            <td> $ <span>500</span></td>
+        </tr>
+    </template>
+
+     <!--Here Start my Footer section-->
+
+
+
+
+     <footer id="footer">
+
+      <h2 class="My">Siguenos en Nuestras Redes</h2>
+     
+    
+        <div class="social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+        
+    
+        <p class="end">©Creado por Erick Valdez 2022</p>
+    
+      </footer>
+
+  <script src="dom.js"></script>
+
+    
+
+    
+  
+
+
+    <script src="/index.js"></script>
+</body>
+</html>
